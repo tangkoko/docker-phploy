@@ -25,7 +25,7 @@ RUN apk add --update \
     perl \
     && rm -rf /var/cache/apk/*
 
-RUN wget https://github.com/banago/PHPloy/blob/master/dist/phploy.phar && \
+RUN wget https://github.com/banago/PHPloy/dist/phploy.phar  && \
     chmod +x phploy.phar && mv phploy.phar /usr/local/bin/phploy
 
 # Set up the application directory
