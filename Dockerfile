@@ -25,8 +25,9 @@ RUN apk add --update \
     perl \
     && rm -rf /var/cache/apk/*
 
-RUN wget https://github.com/banago/PHPloy/dist/phploy.phar && \
-    chmod +x phploy.phar && mv phploy.phar /usr/local/bin/phploy
+RUN git clone https://github.com/banago/PHPloy.git && \
+	chmod +x PHPloy/dist/phploy.phar && \
+    mv PHPloy/dist/phploy.phar /usr/local/bin/phploy
 
 # Set up the application directory
 VOLUME ["/app"]
