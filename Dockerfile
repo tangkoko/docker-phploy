@@ -25,7 +25,7 @@ RUN apk add --update \
     perl \
     && rm -rf /var/cache/apk/*
 
-RUN git clone https://github.com/banago/PHPloy.git && \
+RUN git clone https://github.com/tangkoko/PHPloy.git && \
 	chmod +x PHPloy/dist/phploy.phar && \
     mv PHPloy/dist/phploy.phar /usr/local/bin/phploy
 
