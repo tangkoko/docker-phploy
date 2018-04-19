@@ -3,6 +3,7 @@ MAINTAINER remyvv <remy@remysplace.de>
 
 RUN apk add --update \
     ca-certificates \
+    openssh-client \
     bash \
     git \
     mercurial \
