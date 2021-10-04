@@ -1,5 +1,4 @@
-FROM alpine:3.2
-MAINTAINER remyvv <remy@remysplace.de>
+FROM alpine
 
 RUN apk add --update \
     ca-certificates \
