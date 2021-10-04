@@ -28,6 +28,8 @@ RUN apk add --update \
 RUN git clone https://github.com/tangkoko/PHPloy.git && \
 	chmod +x PHPloy/dist/phploy.phar && \
     mv PHPloy/dist/phploy.phar /usr/local/bin/phploy
+    
+RUN apk add --no-cache openssh-client \
 
 # Set up the application directory
 VOLUME ["/app"]
